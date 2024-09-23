@@ -1,0 +1,134 @@
+/* General styles for the App */
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa; /* Fondo claro */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  color: #333; /* Color oscuro para el texto */
+}
+
+/* Logo styling */
+.App-logo {
+  height: 25vmin;
+  pointer-events: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.App-logo:hover {
+  transform: scale(1.05); /* Sutil agrandamiento en hover */
+  filter: brightness(1.1); /* Efecto de brillo */
+}
+
+/* Header styling */
+.App-header {
+  background-color: #ffffff;
+  border: 1px solid #e0e4e8; /* Bordes suaves */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Link styling */
+.App-link {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.App-link:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* NavBar styling */
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #343a40;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e0e4e8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.NavBar a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.NavBar a:hover {
+  color: #f39c12; /* Cambia a un tono naranja en hover */
+}
+
+/* Mascota Card Styling */
+.Card {
+  width: 18rem;
+  height: 24rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.Card:hover {
+  transform: translateY(-10px); /* Efecto de elevación al pasar el mouse */
+}
+
+.Card-img-top {
+  height: 14rem;
+  object-fit: cover; /* Imagen ajustada al contenedor */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .NavBar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .NavBar a {
+    padding: 8px 0;
+  }
+
+  .App-header {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
